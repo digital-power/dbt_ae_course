@@ -11,7 +11,7 @@ Before starting, ensure you have the following installed:
 
 ## Step 1: Clone the Repository
 
-1. **Clone the repository** to your laptop by running in your terminal:
+1. **Clone the repository** to your laptop by running in your terminal :
    ```bash
    git clone https://github.com/digital-power/dbt_ae_course.git <desired_name>
    ```
