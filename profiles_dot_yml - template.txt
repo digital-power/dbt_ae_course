@@ -3,8 +3,8 @@ dbt_ae_course:
   outputs:
     base: &base
       type: databricks
-      host: adb-2590751238851022.2.azuredatabricks.net/
-      http_path: /sql/1.0/warehouses/3106e76f77d28e17  # Serverless SQL cluster
+      host: adb-556647915164336.16.azuredatabricks.net/
+      http_path: /sql/1.0/warehouses/e35b822548150739  # Serverless SQL cluster
       token: <dapiXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX>
       threads: 4
     dev:
