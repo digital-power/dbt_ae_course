@@ -2,9 +2,16 @@ version: 2
 
 models:
   - name: fct_orders
+    description: "This is our order fact table"
+
     columns:
     - name: orderdate
+      description: "order date"
       data_tests:
         - not_null
-        - unique
+        - unique:
+            config:
+              severity: error
+              error_if: ">2500"
+              warn_if: ">1"
         
