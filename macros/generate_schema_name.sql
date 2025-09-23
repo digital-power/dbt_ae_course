@@ -2,7 +2,7 @@
 
     {%- if target.schema == 'databricks_scheduled_job' or target.name == 'databricks_cluster' -%}
 
-        {{ custom_schema_name | trim }}
+        team
 
     {%- elif custom_schema_name is none -%}
 
