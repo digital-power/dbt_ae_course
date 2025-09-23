@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "contains the fact table with all orders"
+
+    columns:
+    - name: orderkey
+      description: "unique order key"
+      data_tests:
+        - not_null
+    - name: orderpriority
+      data_tests:
+        - unique:
+            config:
+              severity: error
+              error_if: ">3"
+              warn_if: ">1"
