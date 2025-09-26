@@ -1,6 +1,6 @@
 select
 orders.*,
-customer.name as customer_name
+customer.name as customer_name,
 customer.acctbal as account_balance
 
 from {{ ref('silver_orders') }} as orders
