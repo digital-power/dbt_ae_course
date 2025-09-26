@@ -1,0 +1,5 @@
+sources:
+  - name: stg
+    schema: stg
+    tables:
+      - name: orders
