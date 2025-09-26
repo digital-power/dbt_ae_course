@@ -115,7 +115,7 @@ If you encounter issues:
 - Ensure your Databricks token is valid
 - Confirm the profile name matches between `profiles.yml` and `dbt_project.yml`
 
-If you get the following error:
+If you get the following SSL certificate error:
 ```
 WARNING:urllib3.connectionpool:Retrying (DatabricksRetryPolicy(total=29, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)'))': /sql/1.0/warehouses/e35b822548150739
 ```
