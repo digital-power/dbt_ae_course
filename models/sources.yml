@@ -3,3 +3,4 @@ sources:
     schema: stg
     tables:
       - name: orders
+      - name: customer
