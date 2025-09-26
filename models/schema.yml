@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_invoices
+    columns:
+    - name: custkey
+      data_tests:
+      - not_null
+    - name: customer_name
+      data_tests:
+      - not_null
+    - name: orderkey
+      data_tests:
+      - not_null
+      - unique
