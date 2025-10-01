@@ -1,6 +1,6 @@
 {{ config(
     materialized="incremental",
-    unique_key=["custkey", "orderdate"]
+    unique_key=["custkey", "orderdate"],
     incremental_strategy="merge"
 ) }}
 
