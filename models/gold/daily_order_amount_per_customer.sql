@@ -11,8 +11,8 @@ sum(totalprice) as daily_amount
 
 from {{ ref('silver_orders') }}
 
-group by orderdatem custkey
-
 {% if is_incremental() %}
     where orderdate > (select max(orderdate) from {{ this }})
 {% endif %}
+
+group by orderdate, custkey
