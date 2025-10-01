@@ -1,7 +1,7 @@
 {{ config(
     materialized="incremental",
     unique_key="custkey",
-    incremental_stratege="merge"
+    incremental_strategy="merge"
 ) }}
 
 select
