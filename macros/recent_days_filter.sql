@@ -3,4 +3,3 @@
     {{ date_field }} >= current_date - interval '{{ days_back }} day'
 
 {% endmacro %}
-git
