@@ -1,5 +1,5 @@
-{% macro last_n_days(date_field, n_days=90) %}
+{% macro recent_days_filter(date_field, n_days=90) %}
 
-    {{ date_field }} >= {{ dbt.dateadd('day', -1 * n_days, 'current_date') }}
-    
+    {{ date_field }} >= current_date - interval '{{ days_back }} day'
+
 {% endmacro %}
